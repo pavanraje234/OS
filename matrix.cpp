@@ -65,14 +65,15 @@ int main() {
     }
 
     // Create threads
-    vector<vector<pthread_t>> threads(rowsA, vector<pthread_t>(colsB));
-    vector<vector<ThreadData>> threadData(rowsA, vector<ThreadData>(colsB));
+    vector<vector<pthread_t>> threads(rowsA, vector<pthread_t>(colsB)); //store thread id
+    vector<vector<ThreadData>> threadData(rowsA, vector<ThreadData>(colsB)); //2d vector to store data
 
     // Create a thread for each element in the result matrix
     for (int i = 0; i < rowsA; i++) {
         for (int j = 0; j < colsB; j++) {
             threadData[i][j] = {i, j};
             pthread_create(&threads[i][j], nullptr, multiplyElement, &threadData[i][j]);
+
         }
     }
 

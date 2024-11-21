@@ -138,3 +138,4 @@ int main() {
 
     return 0;
 }
+//7 //priority 2 4 6 10 8 12 9 //At 0 1 2 3 4 5 6//BT 4 2 3 5 1 4 6 

@@ -51,7 +51,7 @@ Basic Linux Commands
    Searches for a pattern in files.
    ```bash
    $ grep "hello" file2.txt
-   hello world
+   hello world   
    ```
 
 3. **`tar` (Archive Files)**  
@@ -68,6 +68,7 @@ Basic Linux Commands
    $ chmod 755 file2.txt
    $ ls -l
    -rwxr-xr-x 1 user user 0 Nov 16 10:00 file2.txt
+    #owner - group - other user
    ```
 
 5. **`top` (Monitor System Processes)**  
